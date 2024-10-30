@@ -14,5 +14,5 @@ import { TrainingComponent } from './components/training/training.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'porfolio';
+  title = 'Portfolio Cristian Requena';
 }
