@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="sidebar-line"></div>
+    <div class="content">
+        <div class="a">
+            <h1 class="title name">Cristian</h1>
+            <h1 class="title lastname">Requena</h1>
+        </div>
+        
+        <div class="subtitle-container">
+            <span class="subtitle">Transformando ideas en soluciones, desde el Frontend hasta el Backend</span>
+            <div class="contact-info">
+                <div>
+                    <button class="email" (click)="abrirPopup()">cristian91rp&#64;gmail.com</button>
+                    
+                </div>
+                <a href="../../../../../assets/documents/CV Cristian Requena.pdf" download="CV Cristian Requena.pdf" class="header__icon cv-icon"></a>
+                <a href="https://www.linkedin.com/in/cristian-requena/" class="header__icon linkedin-icon"></a>
+                <a href="https://github.com" class="header__icon github-icon"></a>
+            </div>
+        </div>
+        <div>
+            <div class="about">
+                <h2 class="about-title">Quién soy</h2>
+                <p class="about-description">Soy un recién graduado en Desarrollo Full Stack con una sólida formación en desarrollo web y gran capacidad para adaptarme a nuevos desafíos. Estoy altamente motivado para seguir aprendiendo y mejorar mis habilidades, contribuyendo de manera efectiva al éxito de cualquier equipo con el que trabaje.</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay" *ngIf="mostrarPopup">
+        <div class="popup-content">
+            <app-form-email (cerrar)="cerrarPopup()"></app-form-email>

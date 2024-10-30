@@ -1,0 +1,66 @@
+/* Estilo global */
+.footer {
+    background-color: #151B23;
+}
+
+/* Información de contacto en el footer */
+.footer__contact-info {
+    display: flex;
+    max-width: 1280px;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+/* Estilo del botón de correo electrónico */
+.footer__email-button {
+    padding: 0.25rem 0.6rem;
+    border: 1px solid #F0F6FC;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #F0F6FC;
+    cursor: pointer;
+}
+
+.footer__email-button:hover {
+    color: #F20153;
+    border: 2px solid #F20153;
+}
+
+/* Iconos de redes sociales en el footer */
+.footer__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+    cursor: pointer;
+}
+
+.footer__social-links{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Icono de LinkedIn */
+.footer__icon.linkedin-icon {
+    background-image: url('/assets/icons/linkedin-white.png');
+}
+
+.footer__icon.linkedin-icon:hover {
+    background-image: url('/assets/icons/linkedin-red.png');
+}
+
+/* Icono de GitHub */
+.footer__icon.github-icon {
+    background-image: url('/assets/icons/github-white.png');
+}
+
+.footer__icon.github-icon:hover {
+    background-image: url('/assets/icons/github-red.png');
+}

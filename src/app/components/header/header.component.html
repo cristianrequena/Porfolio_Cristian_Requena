@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="header__container">
+    <div class="header__name">
+      <div class="name">C</div>
+      <div class="lastname">R</div>
+    </div>
+    
+    <!-- Botón de menú hamburguesa -->
+    <button class="header__menu-toggle" (click)="toggleMenu()">
+      <div class="menu-icon" [class.is-open]="isMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <!-- Menú de navegación con la escucha de evento menuClosed -->
+    <app-header-nav class="header__nav header"
+      [class.is-open]="isMenuOpen"
+      (menuClosed)="closeMenu()">
+    </app-header-nav>
+  </div>
+</div>
+
+<app-presentation></app-presentation>

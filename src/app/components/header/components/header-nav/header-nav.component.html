@@ -1,0 +1,7 @@
+<ul class="header__nav">
+  <li class="header__nav-item" *ngFor="let item of arrNav">
+    <a href="#{{ item.fragment }}" class="header__nav-item-content" (click)="onLinkClick()">
+      {{ item.title }}
+    </a>
+  </li>
+</ul>

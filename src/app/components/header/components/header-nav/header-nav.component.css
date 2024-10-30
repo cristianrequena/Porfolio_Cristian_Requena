@@ -1,0 +1,109 @@
+.header__nav {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    font-size: large;
+}
+
+.header__nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__nav-item-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:90%;
+    padding: 0 0.5rem;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__nav-item:hover .header__nav-item-content {
+    color: #00ff99;
+}
+
+.header__nav-item img {
+    width: 1rem;
+    opacity: 0.5;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__nav-item:hover img {
+    transform: translateY(2px);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    min-width: 250%;
+    top: 100%;
+    left: -10px;
+    background-color: #F0F6FC;
+    font-weight: 500;
+    color: black;
+    list-style: none;
+    padding: 1.2rem 2.2rem 1.2rem 1.2rem;
+    opacity: 1;
+}
+
+.header__nav-item:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    display: flex;
+    padding: 0.5rem 0;
+}
+
+.dropdown-item:hover {
+    filter: brightness(0) saturate(100%) invert(33%) sepia(78%) saturate(5310%) hue-rotate(147deg) brightness(99%) contrast(102%);
+    transform: translateY(2px);
+}
+
+.dropdown-item-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.dropdown-item-icon img {
+    width: 30px;
+}
+
+.sub-dropdown-menu {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    font-size: medium;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        display: flex;
+        padding: 0.2rem 0.4rem;
+        margin: auto;
+        font-weight: 600;
+        align-items: center;
+        color:#F0F6FC;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        min-width: 0;
+        top: 0;
+        padding: 0 2rem;
+    }
+}

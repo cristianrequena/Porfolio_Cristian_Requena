@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="sidebar-line"></div>
+  <div class="tab-display">
+    <button class="prev-btn" (click)="changeTab(-1)">&#10094;</button>
+    <div class="tab-content">
+      <h2>{{ tabs[selectedIndex].name }}</h2>
+      <div class="images-container">
+        <img 
+          *ngFor="let image of tabs[selectedIndex].images" 
+          [src]="image.src" 
+          [alt]="image.alt" 
+          class="tab-image"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <button class="next-btn" (click)="changeTab(1)">&#10095;</button>
+  </div>
+</div>
